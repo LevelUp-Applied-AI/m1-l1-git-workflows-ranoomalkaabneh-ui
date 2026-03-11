@@ -39,3 +39,36 @@ python test_environment.py    # should print "Environment OK"
 ---
 
 *Starter file for Lab 1 — lab-1-git-workflows | aispire-14005*
+# Hospital Admission Records Analysis
+
+## Hospital Admission Records Analysis
+
+## Team Members
+
+-raneem alkaabneh
+
+## Project Overview
+
+This project focuses on organizing and analyzing hospital admission records to better understand admission patterns, patient flow, and operational trends. It is intended for team members working on data analysis and reporting workflows. The expected output is a reproducible project structure that supports future analysis, visualizations, and insights based on hospital admissions data.
+
+## Data Sources
+
+This project uses hospital admission records stored as raw tabular data files for analysis and exploration.
+
+Data is not tracked in this repository. See the setup instructions below
+for how to obtain and place the data files before running any analysis.
+
+Expected data location:
+- `data/raw/admissions.csv`
+
+If additional raw files are used later, they should also be placed in:
+- `data/raw/`
+
+## Setup Instructions
+
+Clone the repository and move into the project directory:
+
+```bash
+git clone <https://github.com/LevelUp-Applied-AI/m1-l1-git-workflows-ranoomalkaabneh-ui.git>
+cd m1-l1-git-workflows-ranoomalkaabneh-ui 
+python -m venv .venv

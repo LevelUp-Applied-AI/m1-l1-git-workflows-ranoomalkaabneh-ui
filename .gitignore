@@ -1,4 +1,5 @@
 # Python
+.venv/
 __pycache__/
 *.pyc
 *.pyo
@@ -11,3 +12,20 @@ __pycache__/
 # - Data files: *.csv, *.parquet, *.xlsx, data/raw/
 # - Secrets: .env
 # - OS artifacts: .DS_Store
+# Secrets
+.env
+*.key
+*.pem
+
+# Data files
+*.csv
+*.parquet
+*.xlsx
+data/raw/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
