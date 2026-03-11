@@ -1,39 +1,28 @@
 # AGENTS.md
 
 ## Testing Requirements
-All changes must pass:
 
-python test_environment.py
-
-Any code added to src/ must include tests inside the tests/ directory.
+All changes must pass `python test_environment.py` before committing.
+Any code added to `src/` must have a corresponding test in `tests/`
+that passes with `pytest tests/ -v`.
 
 ## Secrets Policy
-Do not include API keys, passwords, database credentials,
-or personal data in prompts or commits.
 
-Never commit:
-.env
-*.key
-*.pem
+Do not include API keys, database passwords, file paths containing
+personal data, or raw data content in any prompt. Never commit
+`.env`, `*.key`, or any file containing credentials.
 
 ## Scope Boundaries
-Agents may edit:
 
-src/
-notebooks/
-
-Agents must NOT modify:
-
-requirements.txt
-setup.sh
-.gitignore
-
-without human review.
+Agents may edit files in `src/` and `notebooks/`.
+Do not modify `requirements.txt` without human review.
+Do not modify `setup.sh` without running and testing the result locally.
+Do not touch `.gitignore` without confirming the change doesn't
+accidentally exclude source files.
 
 ## Reproducibility Standard
-All AI-assisted changes must be tested locally before committing.
 
-A change is complete only if:
-- it runs locally
-- test_environment.py prints "Environment OK"
-- no setup errors occur
+All AI-assisted changes require local-first execution: the change
+must run locally and produce the expected output before it is
+committed or pushed. "The AI generated it" is not a substitute
+for running it.
