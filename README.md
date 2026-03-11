@@ -41,91 +41,34 @@ python test_environment.py    # should print "Environment OK"
 *Starter file for Lab 1 — lab-1-git-workflows | aispire-14005*
 # Hospital Admission Records Analysis
 
+## Hospital Admission Records Analysis
+
 ## Team Members
-Raneem Alkaabneh  
-Sara Hassan  
-Omar Khalid  
+
+-raneem alkaabneh
 
 ## Project Overview
-This project analyzes hospital admission records to identify patterns in patient visits and hospital resource usage.
 
-The goal is to build a reproducible data analysis workflow that allows team members to explore and analyze admission data consistently.
+This project focuses on organizing and analyzing hospital admission records to better understand admission patterns, patient flow, and operational trends. It is intended for team members working on data analysis and reporting workflows. The expected output is a reproducible project structure that supports future analysis, visualizations, and insights based on hospital admissions data.
 
 ## Data Sources
-The project uses hospital admission datasets.
 
-Data is not tracked in this repository.
+This project uses hospital admission records stored as raw tabular data files for analysis and exploration.
 
-Place raw data files in:
+Data is not tracked in this repository. See the setup instructions below
+for how to obtain and place the data files before running any analysis.
 
-data/raw/admissions.csv
+Expected data location:
+- `data/raw/admissions.csv`
 
-before running any analysis.
+If additional raw files are used later, they should also be placed in:
+- `data/raw/`
 
 ## Setup Instructions
 
-Clone the repository:
+Clone the repository and move into the project directory:
 
-git clone <repo-url>
-
-Navigate into the project:
-
-cd m1-l1-git-workflows-ranoomalkaabneh-ui
-
-Create a virtual environment:
-
+```bash
+git clone <https://github.com/LevelUp-Applied-AI/m1-l1-git-workflows-ranoomalkaabneh-ui.git>
+cd m1-l1-git-workflows-ranoomalkaabneh-ui 
 python -m venv .venv
-
-Activate the environment:
-
-# Mac / Linux
-source .venv/bin/activate
-
-# Windows Git Bash
-source .venv/Scripts/activate
-
-# Windows CMD
-.venv\Scripts\activate.bat
-
-# Windows PowerShell
-.venv\Scripts\Activate.ps1
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Verify the environment:
-
-python test_environment.py
-
-Expected output:
-
-Environment OK
-
-## Project Structure
-
-m1-l1-git-workflows-ranoomalkaabneh-ui/
-├── README.md
-├── CHANGELOG.md
-├── AGENTS.md
-├── requirements.txt
-├── setup.sh
-├── test_environment.py
-├── .gitignore
-├── src/
-├── notebooks/
-├── data/
-│   └── raw/
-└── tests/
-
-## Contributing
-
-Branch naming conventions:
-
-feature/
-setup/
-fix/
-
-All changes should be submitted through Pull Requests.
-
-Commit messages should clearly describe the change.
